@@ -36,7 +36,7 @@ export const HeaderStyle = styled.header`
           line-height: 100px;
           font-family: Roboto, sans-serif;
           text-transform: uppercase;
-          color: #05364d;
+          color: ${(props) => props.theme.drakblue};
           padding: 0px;
           font-size: 12px;
           display: inline-block;
@@ -63,7 +63,7 @@ export const HeaderStyle = styled.header`
       top: -70px;
       left: 0;
       right: 0;
-      background: #ffffff;
+      background: ${(props) => props.theme.white};
       transform: translateY(70px);
       transition: transform 500ms ease, background 500ms ease;
       box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
@@ -92,11 +92,11 @@ export const HeaderStyle = styled.header`
       .nav {
         .nav-item {
           .nav-link {
-            color: #fff;
+            color: ${(props) => props.theme.white};
           }
           &.active {
             .nav-link {
-              color: #efb6df;
+              color: ${(props) => props.theme.pink};
             }
           }
         }
@@ -104,12 +104,12 @@ export const HeaderStyle = styled.header`
     }
 
     &.navbar_fixed .main_menu {
-      background: #8034c3;
+      background: ${(props) => props.theme.purple};
     }
 
     .navbar {
       @media (max-width: 991px) {
-        background: #8034c3;
+        background: ${(props) => props.theme.purple};
       }
     }
   }
