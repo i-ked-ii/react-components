@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import TopText from "../TopText";
 import Button from "../Button";
 import { MainTitleStyle } from "./style";
@@ -33,4 +34,18 @@ const MainTitle = ({
   );
 };
 
+MainTitle.propTypes = {
+  className: PropTypes.string,
+  toptitle: PropTypes.string,
+  title: PropTypes.string,
+  subtitle: PropTypes.string,
+  desc: PropTypes.string,
+  hasButton: PropTypes.bool,
+  btnClass: PropTypes.string,
+  btnTxt: PropTypes.string,
+  onClick: PropTypes.func,
+};
+MainTitle.defaultProps = {
+  className: "",
+};
 export default MainTitle;

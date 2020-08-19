@@ -93,23 +93,23 @@ export default function Home() {
                     Creative art director & designer
                   </h5>
                   <div className="social_icons my-5">
-                    <a href="#">
+                    <a href="/" rel="noopener noreferrer">
                       <i className="ti-twitter"></i>
                     </a>
-                    <a href="#">
+                    <a href="/" rel="noopener noreferrer">
                       <i className="ti-skype"></i>
                     </a>
-                    <a href="#">
+                    <a href="/" rel="noopener noreferrer">
                       <i className="ti-instagram"></i>
                     </a>
-                    <a href="#">
+                    <a href="/">
                       <i className="ti-dribbble"></i>
                     </a>
-                    <a href="#">
+                    <a href="/" rel="noopener noreferrer">
                       <i className="ti-vimeo"></i>
                     </a>
                   </div>
-                  <a className="primary_btn" href="#">
+                  <a className="primary_btn" href="/" rel="noopener noreferrer">
                     <span>See My Work</span>
                   </a>
                 </div>
@@ -183,7 +183,7 @@ export default function Home() {
                   all darkness then fourth can't create d forth Also signs Also
                   signs his face were moltenus Also signs his face
                 </p>
-                <a className="primary_btn" href="#">
+                <a className="primary_btn" href="/">
                   <span>Download CV</span>
                 </a>
               </div>
@@ -218,7 +218,7 @@ export default function Home() {
                   Two he is dominion evening their Fruit saw for brought fish
                   forth
                 </p>
-                <a href="#" className="primary_btn2 mt-35">
+                <a href="/" className="primary_btn2 mt-35" rel="noopener noreferrer">
                   Learn More
                 </a>
               </div>
@@ -233,7 +233,7 @@ export default function Home() {
                   Two he is dominion evening their Fruit saw for brought fish
                   forth
                 </p>
-                <a href="#" className="primary_btn2 mt-35">
+                <a href="/" className="primary_btn2 mt-35" rel="noopener noreferrer">
                   Learn More
                 </a>
               </div>
@@ -248,7 +248,7 @@ export default function Home() {
                   Two he is dominion evening their Fruit saw for brought fish
                   forth
                 </p>
-                <a href="#" className="primary_btn2 mt-35">
+                <a href="/" className="primary_btn2 mt-35" rel="noopener noreferrer">
                   Learn More
                 </a>
               </div>
