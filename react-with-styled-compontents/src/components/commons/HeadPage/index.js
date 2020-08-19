@@ -1,11 +1,12 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { HeadPageStyle } from "./style";
 import { Link } from "react-router-dom";
 
-const HeadPage = ({ title, navlink }) => {
+const HeadPage = ({ className, title, navlink }) => {
   const pathname = window.location.pathname;
   return (
-    <HeadPageStyle className="banner_area">
+    <HeadPageStyle className={`banner_area ${className}`}>
       <div className="banner_inner d-flex align-items-center">
         <div className="container">
           <div className="banner_content text-center">
@@ -28,4 +29,12 @@ const HeadPage = ({ title, navlink }) => {
   );
 };
 
+HeadPage.propTypes = {
+  className: PropTypes.string,
+  title: PropTypes.string,
+  navlink: PropTypes.array
+};
+HeadPage.defaultProps = {
+  className: "",
+};
 export default HeadPage;

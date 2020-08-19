@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import MainTitle from "../MainTitle";
 import { SectionGapStyle } from "./style";
 
@@ -45,4 +46,21 @@ const SectionGap = ({
   );
 };
 
+SectionGap.propTypes = {
+  className: PropTypes.string,
+  titleClass: PropTypes.string,
+  toptitle: PropTypes.string,
+  title: PropTypes.string,
+  subtitle: PropTypes.string,
+  desc: PropTypes.string,
+  hasButton: PropTypes.bool,
+  btnClass: PropTypes.string,
+  btnTxt: PropTypes.string,
+  imgSrc: PropTypes.string,
+  imgTitle: PropTypes.string,
+  onClick: PropTypes.func,
+};
+SectionGap.defaultProps = {
+  className: "",
+};
 export default SectionGap;

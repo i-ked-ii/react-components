@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 import {
   Collapse,
   Navbar,
@@ -14,13 +15,13 @@ import {
 } from "reactstrap";
 import { HeaderStyle } from "./style";
 
-const Header = ({ props, notHome }) => {
+const Header = ({ props, className, notHome }) => {
   const pathname = window.location.pathname;
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
   return (
-    <HeaderStyle className={`${notHome === true ? "header_inner_page" : ""}`}>
+    <HeaderStyle className={`${className} ${notHome === true ? "header_inner_page" : ""}`}>
       <div className="main_menu">
         <nav className="navbar navbar-expand-lg navbar-light">
           <div className="container">
@@ -74,4 +75,11 @@ const Header = ({ props, notHome }) => {
   );
 };
 
+Header.propTypes = {
+  className: PropTypes.string,
+  notHome: PropTypes.bool,
+};
+Header.defaultProps = {
+  className: "",
+};
 export default Header;

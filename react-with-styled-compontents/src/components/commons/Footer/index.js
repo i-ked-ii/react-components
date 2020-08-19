@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { Nav, NavItem, NavLink } from "reactstrap";
 import {
@@ -10,7 +11,7 @@ import {
 } from "react-icons/fa";
 import { FooterStyle } from "./style";
 
-const index = () => {
+const Footer = () => {
   return (
     <FooterStyle className="footer_area">
       <div className="container">
@@ -85,4 +86,11 @@ const index = () => {
   );
 };
 
-export default index;
+Footer.propTypes = {
+  className: PropTypes.string,
+  title: PropTypes.string,
+};
+Footer.defaultProps = {
+  className: "",
+};
+export default Footer;
